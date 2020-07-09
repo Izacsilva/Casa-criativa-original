@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /*Cores da marca*/
+    --cor-primária: #FF3C79;
+    --cor-sombra: #BF2E5C;
+    --cor-secundária: #801F3D;
+    --cor-Fundo: #ECECEC;
+    /*Cores dos textos*/
+    --cor-TextoPrincipal: #3E3E3E;
+    --cor-TextoSecundário: #5E5E5E;
+}

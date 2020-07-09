@@ -1,0 +1,25 @@
+#container {
+    background: var(--cor-Fundo);
+    
+    display: flex;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.content .text-main .btn-link {
+    border: 0;
+    background-color: var(--cor-Fundo);
+    color: var(--cor-primária);
+    font-weight: bold;
+}
+
+.content .text-main .btn-fisico {
+    border: 0;
+    background-color: var(--cor-primária);
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    height: 46px;
+}
