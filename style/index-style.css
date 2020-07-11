@@ -1,28 +1,147 @@
 body {
     background: var(--cor-Fundo);
     color: var(--cor-TextoPrincipal);
-
-    text-align: center;
-}
-
-button {
-    border: none;
-    background: none;
-    font-weight: bold;
-}
-
-.fat {
-    color: white;
-    background-color: var(--cor-primária);
-}
-
-#footer a {
-    font-weight: bold;
-    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
     
 }
 
 .hide {
     display: none; 
     
+}
+
+a {
+    color: var(--cor-primária);
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+p, .descripttion {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;  
+}
+
+#container {
+    width: 80%;
+    max-width: 1900px;
+    
+    margin: 40px auto;
+
+    display: flex;
+}
+
+#intro {
+    width: 300px;
+
+    margin-right: 20px;
+}
+
+main {
+    margin: 32px 0;
+}
+
+main p{
+    margin: 16px 0;
+}
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 36px;
+}
+
+button {
+    background: none;
+    border: none;
+    color: var(--cor-primária);
+    
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+
+    cursor: pointer;
+    
+    outline: none;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+button.fat:hover {
+    text-decoration: none;
+}
+
+button.fat {
+    background-color: var(--cor-primária);
+    border-radius: 6px;
+   
+    
+    color: white;
+
+    width: 150px;
+    height: 46px;
+
+    box-shadow: 0px 5px 12px rgba(255, 0, 92, 0.16);
+}
+
+footer {
+    text-align: center;
+    
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: var(--cor-TextoSecundário);
+
+}
+
+footer .coracao {
+    color: var(--cor-primária);
+    
+}
+
+footer a {
+    color: var(--cor-TextoPrincipal);
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+footer a:hover {
+    color: var(--cor-primária);
+    
+}
+
+.idea {
+    
+    display: flex;
+    background-color: white;
+    box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.16);
+    border-radius: 6px;
+    
+    padding: 32px;
+
+    margin-bottom: 32px;
+
+}
+
+.idea img {
+    width: 60px;
+    height: 60px;
+
+    margin-right: 32px;
+}
+
+.idea p {
+    margin: 8px 0;
+    color: var(--cor-TextoSecundário);
+}
+
+.idea .descripttion {
+    margin: 12px 0;
 }
