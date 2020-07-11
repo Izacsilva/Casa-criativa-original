@@ -1,0 +1,28 @@
+body {
+    background: var(--cor-Fundo);
+    color: var(--cor-TextoPrincipal);
+
+    text-align: center;
+}
+
+button {
+    border: none;
+    background: none;
+    font-weight: bold;
+}
+
+.fat {
+    color: white;
+    background-color: var(--cor-primária);
+}
+
+#footer a {
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.hide {
+    display: none; 
+    
+}

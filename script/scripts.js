@@ -1,5 +1,5 @@
 document
-    .querySelector("button .fat")
+    .querySelector("button.fat")
     .addEventListener("click", function(){
         document
         .querySelector("#footer")
