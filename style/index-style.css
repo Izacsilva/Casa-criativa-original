@@ -300,6 +300,10 @@ form button:hover {
     margin-right: 16px;
 }
 
+#page-ideas nav li a {
+    color: var(--cor-TextoPrincipal)
+}
+
 #page-ideas nav li:last-child {
     margin: 0;
 
@@ -316,13 +320,36 @@ form button:hover {
     box-shadow: 0px 5px 12px rgba(255, 0, 92, 0.16);
 }
 
-#page-ideas nav li:last-child:hover {
-    background-color: var(--cor-sombra);
-}
 #page-ideas nav li:last-child a {
     color: white;
     font-size: 14px;
     font-weight: bold;
 
     text-decoration: none;
+}
+
+#page-ideas nav li:last-child:hover {
+    background-color: var(--cor-sombra);
+}
+
+section.title {
+    text-align: center;
+
+    margin: 62px 0;
+}
+
+section.title p {
+    opacity: 0.7;
+}
+
+section.title h1 {
+
+    font-size: 28px;
+}
+
+section.grid-ideas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
 }
