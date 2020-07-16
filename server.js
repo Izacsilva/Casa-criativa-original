@@ -3,6 +3,40 @@
 const express = require("express")
 const server = express()
 
+// Arry coleção de objetos
+
+const ideas = [
+    {
+        img: "https://image.flaticon.com/icons/svg/2729/2729007.svg",
+        title: "Curso de Programação",
+        category: "Educação",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique tincidunt augue sit elit.",
+        url: "https://www.rocketseat.com.br"
+    },
+    {
+        img: "https://image.flaticon.com/icons/svg/2729/2729027.svg",
+        title: "Meditação",
+        category: "Mentalidade",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique tincidunt augue sit elit.",
+        url: "https://www.rocketseat.com.br"
+    },
+    {
+        img: "https://image.flaticon.com/icons/svg/2729/2729005.svg",
+        title: "Exercício",
+        category: "Saúde",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique tincidunt augue sit elit.",
+        url: "https://www.rocketseat.com.br"
+    },
+    {
+        img: "https://image.flaticon.com/icons/svg/2729/2729032.svg",
+        title: "Karaokê",
+        category: "Entretenimento",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique tincidunt augue sit elit.",
+        url: "https://www.rocketseat.com.br"
+    },
+]
+
+
 //configurar arquivos estáticos (css, script, imagens)
 server.use(express.static("public"))
 
@@ -17,13 +51,26 @@ nunjucks.configure("views", {
 //criado rota /
 // capturando o pedido do cliente para responder
 server.get("/", function(req, res) {
-   
-    return res.render("index.html")
+
+    const reversedIdeas = [...ideas].reverse()
+
+    let lastIdeas = []
+    for (let idea of reversedIdeas) {
+        if(lastIdeas.length < 2) {
+            lastIdeas.push(idea)
+        }
+    }
+
+
+    return res.render("index.html", { ideas: lastIdeas })
 
 })
 
 server.get("/ideias", function(req, res) {
-    return res.render("ideias.html")
+
+    const reversedIdeas = [...ideas].reverse()
+
+    return res.render("ideias.html", { ideas: reversedIdeas})
     
 })
 
