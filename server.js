@@ -34,7 +34,21 @@ const ideas = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique tincidunt augue sit elit.",
         url: "https://www.rocketseat.com.br"
     },
-]
+    {
+        img: "https://image.flaticon.com/icons/svg/2729/2729038.svg",
+        title: "Pintura",
+        category: "Criatividade",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique tincidunt augue sit elit.",
+        url: "https://www.rocketseat.com.br"
+    },
+    {
+        img: "https://image.flaticon.com/icons/svg/2729/2729048.svg",
+        title: "Skrap-Arte",
+        category: "Criatividade",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique tincidunt augue sit elit.",
+        url: "https://www.rocketseat.com.br"
+    },
+]   
 
 
 //configurar arquivos estáticos (css, script, imagens)

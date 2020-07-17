@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/index-style.css">
-    <link rel="stylesheet" href="style/resert-root-style.css">
-
-      
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
+    {% include "head.html" %}
+
     <title>Ideias - Casa Criativa</title>
 </head>
 <body id="page-ideas">
@@ -59,47 +56,7 @@
     </div>
     <!--Modal-->
 
-    <div id="modal" class="hide">
-        <div class="content">
-            <h1>Nova Ideia</h1>
-
-            <form action="">
-            
-                <div class="input-wrapper">
-                    <label for="title">Título da Ideia</label>
-                    <input type="text" name="title">
-                </div>
-            
-                <div class="input-wrapper">
-                    <label for="category">Categoria</label>
-                    <input type="text" name="category">
-                </div>
-                <div class="input-wrapper">
-                    <label for="image">Link da Imagem</label>
-                    <input type="url" name="image">
-                </div>
-            
-                <div class="input-wrapper">
-                    <label for="description">Digite uma descrição para essa ideia</label>
-                    <textarea name="description" cols="30" rows="10"></textarea>
-                </div>
-            
-                <div class="input-wrapper">
-                    <label for="link-idea">Link da Ideia</label>
-                    <input type="url" name="link-idea">
-                </div>
-            
-                <a href="#" class="close" onclick="onOff()">Voltar</a>
-                <button>Salvar</button>
-            
-            
-            
-            
-            
-            
-            </form>
-        </div>
-    </div>
+    {% include "modal.html" %}
 
     <script src="script/scripts.js"></script>
             
