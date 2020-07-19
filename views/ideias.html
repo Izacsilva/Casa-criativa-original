@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    {% include "head.html" %}
+{% extends "layout.html" %}
 
-    <title>Ideias - Casa Criativa</title>
-</head>
-<body id="page-ideas">
-    <div id="container">
-        <header>
+{% set bodyId = "page-ideas" %}
+
+{% block title %}
+<title>Ideias - Casa Criativa</title>
+{% endblock title %}
+    
+{% block content %}
+
+      <header>
             <a href="/">
                 <img src="imagens/logo.png" alt="Logotipo Casa Criativa" class="logo-header">
             </a>
@@ -30,35 +28,11 @@
         <main>
     
             <section class="grid-ideas">
-                
-                {% for idea in ideas %}
-                
-                    <div class="idea">
-                        <img src="{{idea.img}}" alt="{{idea.title}}">
-                        <div class="content">
-                            <h3>{{idea.title}}</h3>
-                            <p>{{idea.category}}</p>
-                            <div class="descripttion">
-                                {{idea.description}}
-                            </div>
-                            <a href="{{idea.url}}" target="_blank">Ir para ideia</a> 
-                        </div>
-                    </div>
-
-
-                {% endfor %}
-                
+                {% include "All_Ideias.html" %}
             </section>
         </main>
         <footer>
             Com <strong class="coracao">❤</strong> <a href="https://www.rocketseat.com.br" target="_blank">rocketseat</a>.
         </footer>
-    </div>
-    <!--Modal-->
 
-    {% include "modal.html" %}
-
-    <script src="script/scripts.js"></script>
-            
-</body>
-</html>
+        {% endblock %}
